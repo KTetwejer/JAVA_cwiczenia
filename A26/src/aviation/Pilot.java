@@ -9,7 +9,7 @@ public class Pilot implements Cloneable
 
     public Pilot(String name, ArrayList<Double> flightHours) {
         this.name = name;
-        this.flightHours = flightHours;
+        this.flightHours = flightHours.clone();
     }
 
     public void setFlightHoursAtIndex(int index, double newHour) {
